@@ -1,0 +1,66 @@
+[
+  {
+    "id": "world_1-line",
+    "type": "line",
+    "source": "world_1",
+    "paint": {
+        "line-color": "white"
+    }
+  }, {
+    "id": "world_250-line",
+    "type": "line",
+    "source": "world_250",
+    "paint": {
+        "line-color": "white"
+    }
+},{
+  "id": "world_500-line",
+  "type": "line",
+  "source": "world_500",
+  "paint": {
+      "line-color": "white"
+  }
+}, {
+  "id": "world_750-line",
+  "type": "line",
+  "source": "world_750",
+  "paint": {
+      "line-color": "white"
+  }
+}, {
+  "id": "world_1000-line",
+  "type": "line",
+  "source": "world_1000",
+  "paint": {
+      "line-color": "white"
+  }
+}, {
+  "id": "world_1250-line",
+  "type": "line",
+  "source": "world_1250",
+  "paint": {
+      "line-color": "white"
+  }
+}, {
+  "id": "world_1500-line",
+  "type": "line",
+  "source": "world_1500",
+  "paint": {
+      "line-color": "white"
+  }
+}, {
+  "id": "world_1750-line",
+  "type": "line",
+  "source": "world_1750",
+  "paint": {
+      "line-color": "white"
+  }
+}, {
+  "id": "world_2000-line",
+  "type": "line",
+  "source": "world_2000",
+  "paint": {
+      "line-color": "white"
+  }
+}
+]

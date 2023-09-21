@@ -1,0 +1,188 @@
+[
+  {
+    "id": "world_1-fill",
+    "type": "fill",
+    "source": "world_1",
+    "paint": {
+        "fill-color": [
+            "match",
+            ["get", "NAME"],
+            "Han", "crimson",
+            "Roman Empire", "purple",
+            "Teotihuacán", "brown",
+            "Hopewell Culture", "yellow",
+            "Axum", "red",
+            "darkgrey"
+        ],
+        "fill-opacity": 0.7
+    }
+}, {
+  "id": "world_250-fill",
+  "type": "fill",
+  "source": "world_250",
+  "paint": {
+      "fill-color": [
+          "match",
+          ["get", "NAME"],
+          "Han", "crimson",
+          "Roman Empire", "purple",
+          "Maya chiefdoms and states", "steelblue",
+          "Hopewell Culture", "yellow",
+          "Axum", "red",
+          "darkgrey"
+      ],
+      "fill-opacity": 0.7
+  }
+}, {
+  "id": "world_500-fill",
+  "type": "fill",
+  "source": "world_500",
+  "paint": {
+      "fill-color": [
+          "match",
+          ["get", "NAME"],
+          "Maya states", "steelblue",
+          "Empire of Ghana", "goldenrod",
+          "Hopewell Culture", "yellow",
+          "Axum", "red",
+          "Eastern Roman Empire", "purple",
+          "Sasanian Empire", "green",
+          "Gupta Empire", "orange",
+          "darkgrey"
+      ],
+      "fill-opacity": 0.7
+  }
+}, {
+  "id": "world_750-fill",
+  "type": "fill",
+  "source": "world_750",
+  "paint": {
+      "fill-color": [
+          "match",
+          ["get", "NAME"],
+          "Umayyad Caliphate", "teal",
+          "Sui Empire", "crimson",
+          "Yamato", "coral",
+          "Empire of Ghana", "goldenrod",
+          "Maya states", "steelblue",
+          "Axum", "red",
+          "Eastern Roman Empire", "purple",
+          "darkgrey"
+      ],
+      "fill-opacity": 0.7
+  }
+}, {
+  "id": "world_1000-fill",
+  "type": "fill",
+  "source": "world_1000",
+  "paint": {
+      "fill-color": [
+          "match",
+          ["get", "NAME"],
+          "Caliphate of Córdoba", "teal",
+          "Song Empire", "crimson",
+          "Imperial Japan (Fujiwara)", "coral",
+          "Maya city-states", "steelblue",
+          "Kingdom of France", "Darkkhaki",
+          "Empire of Ghana", "goldenrod",
+          "Byzantine Empire", "purple",
+          "Khmer Empire", "red",
+          "darkgrey"
+      ],
+      "fill-opacity": 0.7
+  }
+}, {
+  "id": "world_1250-fill",
+  "type": "fill",
+  "source": "world_1250",
+  "paint": {
+      "fill-color": [
+          "match",
+          ["get", "NAME"],
+          "Granada", "teal",
+          "Great Khanate", "crimson",
+          "Khanate of the Golden Horde", "crimson",
+          "Chagatai Khanate", "crimson",
+          "Ilkhanate", "crimson",
+          "Holy Roman Empire", "purple",
+          "Shogun Japan (Kamakura)", "coral",
+          "English Territory", "navy",
+          "France", "Darkkhaki",
+          "Mali", "goldenrod",
+          "Great Zimbabwe", "purple",
+          "Byzantine Empire", "purple",
+          "Sultanate of Delhi", "orange",
+          "Khmer Empire", "red",
+          "Srivijaya Empire", "green",
+          "darkgrey"
+      ],
+      "fill-opacity": 0.7
+  }
+}, {
+  "id": "world_1500-fill",
+  "type": "fill",
+  "source": "world_1500",
+  "paint": {
+      "fill-color": [
+          "match",
+          ["get", "NAME"],
+          "Ming Chinese Empire", "crimson",
+          "Papal States", "purple",
+          "Japan", "coral",
+          "Aztec Empire", "brown",
+          "Songhai", "goldenrod",
+          "Ethiopia", "green",
+          "Byzantine Empire", "purple",
+          "Sultanate of Delhi", "orange",
+          "Srivijaya Empire", "green",
+          "darkgrey"
+      ],
+      "fill-opacity": 0.7
+  }
+}, {
+  "id": "world_1750-fill",
+  "type": "fill",
+  "source": "world_1750",
+  "paint": {
+      "fill-color": [
+          "match",
+          ["get", "NAME"],
+          "Qing Empire", "crimson",
+          "Papal States", "purple",
+          "Japan", "coral",
+          "United Kingdom", "navy",
+          "Vice-Royalty of Brazil", "green",
+          "Vice-Royalty of New Granada", "brown",
+          "Vice-Royalty of New Spain", "brown",
+          "Vice-Royalty of Peru", "brown",
+          "Spain", "brown",
+          "United States of America", "steelblue",
+          "darkgrey"
+      ],
+      "fill-opacity": 0.7
+  }
+}, {
+  "id": "world_2000-fill",
+  "type": "fill",
+  "source": "world_2000",
+  "paint": {
+      "fill-color": [
+          "match",
+          ["get", "NAME"],
+          "Spain", "brown",
+          "Brazil", "green",
+          "China", "crimson",
+          "Italy", "green",
+          "Japan", "coral",
+          "United Kingdom", "navy",
+          "Mexico", "brown",
+          "France", "darkkhaki",
+          "Peurto Rico", "steelblue",
+          "Mali", "goldenrod",
+          "United States", "steelblue",
+          "darkgrey"
+      ],
+      "fill-opacity": 0.7
+  }
+}
+]
