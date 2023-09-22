@@ -6,7 +6,6 @@ import mapSources from './source-json.json'
 import mapLayersLine from './layers-line.json'
 import mapLayersFill from './layers-fill.json'
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibnZ1b25nNzA0IiwiYSI6ImNsOGF5cHR0azAwNnMzdXNzdWw4azFvdDYifQ.lFKZ_tbKzKY89dQfsuVQzg';
 
 export default function App() {
   const [defaultyear, setDefaultYear] = useState(1750)
@@ -60,7 +59,7 @@ export default function App() {
             }
           })
         })
-      }
+      }a
 
       loadImages()
 
