@@ -62,8 +62,28 @@ export default function App() {
         map.current.addLayer(v)
       })
 
-      map.current.on('styleimagemissing', async()=>{
-        await loadImages()
+      // Load multiple images to use as custom markers
+      // search QWE1
+      // Load and add individual images to the map
+      function loadImages () {
+        mapImages.forEach((v, i)=>{
+          map.current.loadImage(v.imgurl, (error, image) => {
+            if (error) {console.log(v.imgname); throw error};
+            if(map.current.hasImage(v.imgname)){
+              // necessary to remove this comment if loading is mangled.
+              //map.current.removeImage(v.imgname)
+            }
+            else{
+              map.current.addImage(v.imgname, image)
+            }
+          })
+        })
+      }
+
+      loadImages()
+
+      map.current.on('styleimagemissing', ()=>{
+        loadImages()
       })
       // Add a GeoJSON source with points
       // search QWE2
