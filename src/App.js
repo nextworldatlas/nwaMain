@@ -6,7 +6,7 @@ import mapSources from './source-json.json'
 import mapLayersLine from './layers-line.json'
 import mapLayersFill from './layers-fill.json'
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibnZ1b25nNzA0IiwiYSI6ImNsOGF5cHR0azAwNnMzdXNzdWw4azFvdDYifQ.lFKZ_tbKzKY89dQfsuVQzg';
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY
 
 export default function App() {
   const [defaultyear, setDefaultYear] = useState(1750)
@@ -14,6 +14,24 @@ export default function App() {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [isStyleLoaded, setIsStyleLoaded] = useState(false)
+
+  // Load multiple images to use as custom markers
+  // search QWE1
+  // Load and add individual images to the map
+  const loadImages = async () => {
+    mapImages.forEach((v, i)=>{
+      map.current.loadImage(v.imgurl, (error, image) => {
+        if (error) {console.log(v.imgname); throw error};
+        if(map.current.hasImage(v.imgname)){
+          // necessary to remove this comment if loading is mangled.
+          //map.current.removeImage(v.imgname)
+        }
+        else{
+          map.current.addImage(v.imgname, image)
+        }
+      })
+    })
+  }
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -25,7 +43,7 @@ export default function App() {
       zoom: 1.25
     });
 
-    map.current.on('load', () => {
+    map.current.on('load', async () => {
       //HISTORICAL GSON FOR SHAPES//
       //QWE0
 
@@ -44,28 +62,8 @@ export default function App() {
         map.current.addLayer(v)
       })
 
-      // Load multiple images to use as custom markers
-      // search QWE1
-      // Load and add individual images to the map
-      function loadImages () {
-        mapImages.forEach((v, i)=>{
-          map.current.loadImage(v.imgurl, (error, image) => {
-            if (error) {console.log(v.imgname); throw error};
-            if(map.current.hasImage(v.imgname)){
-              // necessary to remove this comment if loading is mangled.
-              //map.current.removeImage(v.imgname)
-            }
-            else{
-              map.current.addImage(v.imgname, image)
-            }
-          })
-        })
-      }
-
-      loadImages()
-
-      map.current.on('styleimagemissing', ()=>{
-        loadImages()
+      map.current.on('styleimagemissing', async()=>{
+        await loadImages()
       })
       // Add a GeoJSON source with points
       // search QWE2
@@ -183,11 +181,11 @@ export default function App() {
       setIsStyleLoaded(true)
     });
 
+    loadImages()
   }, [map.current, currentyear]);
 
   const startyear = 0;
   const endyear = 2023
-  let selectedyear = null;
   
   useEffect(()=>{
     setCurrentYear(defaultyear)
@@ -222,16 +220,27 @@ export default function App() {
     if(map.current && isStyleLoaded){
       filterBy(defaultyear)
     }
+
+    // Change color of slider background based upon the position of the slider
+    const sliderElement = document.getElementById("slider")
+    const value = (sliderElement.value-sliderElement.min)/(sliderElement.max-sliderElement.min)*100
+    if(defaultyear <= 1000){
+      sliderElement.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + value + '%, #fff ' + value + '%, white 100%)'
+    } else {
+      sliderElement.style.background = 'linear-gradient(to right, #82CFD0 '+ value *0.4+'%, #00008B ' + value + '%, #fff ' + value + '%, white 100%)'
+    }
   }, [map.current, defaultyear])
 
   return (
     <div>
+      <div ref={mapContainer} className="map-container" />
+
       <div className="map-overlay top">
         <div className="map-overlay-inner">
           <h2>Historical Timeline</h2>
-          <div id="sliderholder">
-            <input id="slider" className="slider" value={defaultyear} type="range" step={250} list="tickmarks" max={endyear} min={startyear} onChange={e=>setDefaultYear(e.target.value)}></input>
-          </div>
+            <div id="sliderholder">
+              <input id="slider" className="slider" value={defaultyear} type="range" step={250} list="tickmarks" max={endyear} min={startyear} onChange={e=>setDefaultYear(e.target.value)}></input>
+            </div>
             <div id="year">{defaultyear} CE</div>
           <datalist id="tickmarks">
           </datalist>
@@ -241,8 +250,6 @@ export default function App() {
           </div>
         </div>
       </div>
-      
-      <div ref={mapContainer} className="map-container" />
     </div>
-  );
+  )
 }
