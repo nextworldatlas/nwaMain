@@ -15,7 +15,6 @@ export default function App() {
   const map = useRef(null);
   const [isStyleLoaded, setIsStyleLoaded] = useState(false)
 
-  // Load multiple images to use as custom markers
   // search QWE1
   // Load and add individual images to the map
   const loadImages = async () => {
