@@ -5,14 +5,19 @@ import pointGeoJSON from './point-geojson.json'
 import mapSources from './source-json.json'
 import mapLayersLine from './layers-line.json'
 import mapLayersFill from './layers-fill.json'
+import './tutorial.css'
+import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded'
+import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded'
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY
 
 export default function App() {
+  const [showTutorial, setShowTutorial] = useState(true)
+  const [tutorialWindow, setTutorialWindow] = useState(0)
   const [defaultyear, setDefaultYear] = useState(1750)
   const [currentyear, setCurrentYear] = useState(1750)
-  const mapContainer = useRef(null);
-  const map = useRef(null);
+  const mapContainer = useRef(null)
+  const map = useRef(null)
   const [isStyleLoaded, setIsStyleLoaded] = useState(false)
 
   // search QWE1
@@ -149,13 +154,16 @@ export default function App() {
               0.4, // Default icon size when zoom is less than 10
               3, 0.6 // Icon size when zoom is 10 or higher
           ],
+          "icon-offset": [
+            0, -100
+          ],
           'text-field': ['get', 'title'],
           'text-font': [
               'Open Sans Semibold',
               'Arial Unicode MS Bold'
           ],
           'text-size': 12,
-          'text-offset': [0, 3.0],
+          'text-offset': [0, 0],
           'text-anchor': 'bottom'
         }
       });
@@ -269,6 +277,110 @@ export default function App() {
           </div>
         </div>
       </div>
+      <button className='button-show-tutorial' onClick={()=>setShowTutorial(prev=>!prev)}>Tutorial</button>
+      {
+        showTutorial &&
+        tutorialWindow === 0 &&
+        <>
+        <div className="tutorial-overlay">
+          <div className="button-tutorial button-tutorial-next" onClick={()=>{setTutorialWindow(prev=>(prev+1)%3)}}><ArrowForwardIosRoundedIcon/></div>
+          <div className="button-tutorial button-tutorial-prev" onClick={()=>{setTutorialWindow(prev=>(prev+2)%3)}}><ArrowBackIosNewRoundedIcon/></div>
+          <div className="button-close" onClick={()=>setShowTutorial(prev=>!prev)}>Close</div>
+              <div className="tutorial-container">
+              <div className="video-box">
+                <video width="300" height="300" controls>
+                  <source src="./sample.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="instruction-box">
+                <h1>Tutorial window # 1</h1>
+                Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
+                <ul>
+                  <li>
+                    perform action 1
+                  </li>
+                  <li>
+                    perform action 2
+                  </li>
+                  <li>
+                    perform action 3
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        </>
+      }
+      {
+        showTutorial &&
+        tutorialWindow === 1 &&
+        <>
+        <div className="tutorial-overlay">
+          <div className="button-tutorial button-tutorial-next" onClick={()=>{setTutorialWindow(prev=>(prev+1)%3)}}><ArrowForwardIosRoundedIcon/></div>
+          <div className="button-tutorial button-tutorial-prev" onClick={()=>{setTutorialWindow(prev=>(prev+2)%3)}}><ArrowBackIosNewRoundedIcon/></div>
+          <div className="button-close" onClick={()=>setShowTutorial(prev=>!prev)}>Close</div>
+              <div className="tutorial-container">
+              <div className="video-box">
+                <video width="300" height="300" controls>
+                  <source src="./sample.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="instruction-box">
+                <h1>Tutorial window # 2</h1>
+                Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
+                <ul>
+                  <li>
+                    perform action 1
+                  </li>
+                  <li>
+                    perform action 2
+                  </li>
+                  <li>
+                    perform action 3
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        </>
+      }
+      {
+        showTutorial &&
+        tutorialWindow === 2 &&
+        <>
+        <div className="tutorial-overlay">
+          <div className="button-tutorial button-tutorial-next" onClick={()=>{setTutorialWindow(prev=>(prev+1)%3)}}><ArrowForwardIosRoundedIcon/></div>
+          <div className="button-tutorial button-tutorial-prev" onClick={()=>{setTutorialWindow(prev=>(prev+2)%3)}}><ArrowBackIosNewRoundedIcon/></div>
+          <div className="button-close" onClick={()=>setShowTutorial(prev=>!prev)}>Close</div>
+              <div className="tutorial-container">
+              <div className="video-box">
+                <video width="300" height="300" controls>
+                  <source src="./sample.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="instruction-box">
+                <h1>Tutorial window # 3</h1>
+                Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
+                <ul>
+                  <li>
+                    perform action 1
+                  </li>
+                  <li>
+                    perform action 2
+                  </li>
+                  <li>
+                    perform action 3
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        </>
+      }
+        
     </div>
   )
 }
