@@ -7,11 +7,11 @@
         "fill-color": [
             "match",
             ["get", "NAME"],
-            "Han", "crimson",
-            "Roman Empire", "purple",
             "Teotihuacán", "brown",
             "Hopewell Culture", "yellow",
+            "Roman Empire", "purple",
             "Axum", "red",
+            "Han", "crimson",
             "darkgrey"
         ],
         "fill-opacity": 0.7
