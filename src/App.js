@@ -54,15 +54,15 @@ export default function App() {
       mapSources.forEach((v, i) => {
         map.current.addSource(v.name, {
           type: 'geojson',
-          data: v.dataurl
+          data: v.dataurl,
         })
       })
 
-      mapLayersLine.forEach((v, i)=> {
-        map.current.addLayer(v)
-      })
       
       mapLayersFill.forEach((v, i)=> {
+        map.current.addLayer(v)
+      })
+      mapLayersLine.forEach((v, i)=> {
         map.current.addLayer(v)
       })
 

@@ -4,63 +4,72 @@
     "type": "line",
     "source": "world_1",
     "paint": {
-        "line-color": "white"
+        "line-color": "white",
+        "line-width": 1
     }
   }, {
     "id": "world_250-line",
     "type": "line",
     "source": "world_250",
     "paint": {
-        "line-color": "white"
+        "line-color": "white",
+        "line-width": 1
     }
 },{
   "id": "world_500-line",
   "type": "line",
   "source": "world_500",
   "paint": {
-      "line-color": "white"
+      "line-color": "white",
+      "line-width": 1
   }
 }, {
   "id": "world_750-line",
   "type": "line",
   "source": "world_750",
   "paint": {
-      "line-color": "white"
+      "line-color": "white",
+      "line-width": 1
   }
 }, {
   "id": "world_1000-line",
   "type": "line",
   "source": "world_1000",
   "paint": {
-      "line-color": "white"
+      "line-color": "white",
+      "line-width": 1
   }
 }, {
   "id": "world_1250-line",
   "type": "line",
   "source": "world_1250",
   "paint": {
-      "line-color": "white"
+      "line-color": "white",
+      "line-width": 1
   }
 }, {
   "id": "world_1500-line",
   "type": "line",
   "source": "world_1500",
   "paint": {
-      "line-color": "white"
+      "line-color": "white",
+      "line-width": 1
   }
 }, {
   "id": "world_1750-line",
   "type": "line",
   "source": "world_1750",
   "paint": {
-      "line-color": "white"
+      "line-color": "white",
+      "line-width": 1
   }
 }, {
   "id": "world_2000-line",
   "type": "line",
   "source": "world_2000",
   "paint": {
-      "line-color": "white"
+      "line-color": "white",
+      "line-width": 1
   }
 }
 ]
