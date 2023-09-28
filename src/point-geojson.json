@@ -47,7 +47,7 @@
                 "type": "Feature",
                 "geometry": {
                     "type": "Point",
-                    "coordinates": [-83.0023, 39.2233,]
+                    "coordinates": [-83.0023, 39.2233]
                 },
                 "properties": {
                     "yearstart": -100,
