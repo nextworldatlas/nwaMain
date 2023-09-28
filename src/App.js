@@ -158,7 +158,7 @@ export default function App() {
             'China', 'China.png',
             'Khmer Empire', 'Khmer.png',
             'Angkor Wat', 'Khmer.png',
-            'Majahapit Empire', 'Majahapit.png',
+            'Majapahit Empire', 'Majapahit.png',
             'Nara, Japan', 'Japan Temple.png',
             'Kyoto, Japan', 'Japan Tori.png',
             'Shogun Japan', 'Japan Shogun.png',
