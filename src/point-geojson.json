@@ -783,6 +783,19 @@
                     "title": "Japan",
                     "link": "https://www.example.com/tokyo"
                 }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [151.2093, -33.8688]
+                },
+                "properties": {
+                    "yearstart": 1700,
+                    "yearend": 2100,
+                    "title": "Australia",
+                    "link": "https://en.wikipedia.org/wiki/Bogan"
+                }
             }
           ]
   }}
