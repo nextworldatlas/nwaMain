@@ -455,7 +455,7 @@
                 "properties": {
                     "yearstart": 1400,
                     "yearend": 1800,
-                    "title": "Ethiopia (Addis Ababa)",
+                    "title": "Ethiopia",
                     "link": "https://en.wikipedia.org/wiki/Ethiopia"
                 }
             },
@@ -468,8 +468,8 @@
                 "properties": {
                     "yearstart": 1200,
                     "yearend": 1600,
-                    "title": "Zimbabwe",
-                    "link": "https://en.wikipedia.org/wiki/Zimbabwe"
+                    "title": "Great Zimbabwe",
+                    "link": "https://en.wikipedia.org/wiki/Great_Zimbabwe"
                 }
             },
             {
