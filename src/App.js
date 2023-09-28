@@ -1,18 +1,25 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react'
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import Tutorial from './Tutorial'
+import SiteNavBar from './SiteNavBar';
+import { FormGroup, FormControlLabel, Switch } from '@mui/material'
 import mapImages from './image-json.json'
 import pointGeoJSON from './point-geojson.json'
 import mapSources from './source-json.json'
 import mapLayersLine from './layers-line.json'
 import mapLayersFill from './layers-fill.json'
+import './tutorial.css'
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY
 
 export default function App() {
+  const [showLabels, setShowLabels] = useState(true)
+  const [showTutorial, setShowTutorial] = useState(true)
+  const [tutorialWindow, setTutorialWindow] = useState(0)
   const [defaultyear, setDefaultYear] = useState(1750)
   const [currentyear, setCurrentYear] = useState(1750)
-  const mapContainer = useRef(null);
-  const map = useRef(null);
+  const mapContainer = useRef(null)
+  const map = useRef(null)
   const [isStyleLoaded, setIsStyleLoaded] = useState(false)
 
   // search QWE1
@@ -49,15 +56,15 @@ export default function App() {
       mapSources.forEach((v, i) => {
         map.current.addSource(v.name, {
           type: 'geojson',
-          data: v.dataurl
+          data: v.dataurl,
         })
       })
 
-      mapLayersLine.forEach((v, i)=> {
-        map.current.addLayer(v)
-      })
       
       mapLayersFill.forEach((v, i)=> {
+        map.current.addLayer(v)
+      })
+      mapLayersLine.forEach((v, i)=> {
         map.current.addLayer(v)
       })
 
@@ -78,8 +85,6 @@ export default function App() {
           })
         })
       }
-
-      loadImages()
 
       map.current.on('styleimagemissing', ()=>{
         loadImages()
@@ -149,13 +154,16 @@ export default function App() {
               0.4, // Default icon size when zoom is less than 10
               3, 0.6 // Icon size when zoom is 10 or higher
           ],
+          "icon-offset": [
+            0, -100
+          ],
           'text-field': ['get', 'title'],
           'text-font': [
               'Open Sans Semibold',
               'Arial Unicode MS Bold'
           ],
           'text-size': 12,
-          'text-offset': [0, 3.0],
+          'text-offset': [0, 0],
           'text-anchor': 'bottom'
         }
       });
@@ -201,6 +209,7 @@ export default function App() {
     });
 
     loadImages()
+    
   }, [map.current, currentyear]);
 
   const startyear = 0;
@@ -238,6 +247,7 @@ export default function App() {
   useEffect(()=>{
     if(map.current && isStyleLoaded){
       filterBy(defaultyear)
+      map.current.style.stylesheet.layers.forEach(l => { if (l.type == "symbol") map.current.setLayoutProperty(l.id, "visibility", showLabels?"visible":"none") })
     }
 
     // Change color of slider background based upon the position of the slider
@@ -248,9 +258,18 @@ export default function App() {
     } else {
       sliderElement.style.background = 'linear-gradient(to right, #82CFD0 '+ value *0.4+'%, #00008B ' + value + '%, #fff ' + value + '%, white 100%)'
     }
-  }, [map.current, defaultyear])
+
+  }, [map.current, defaultyear, showLabels])
 
   return (
+    <>
+    <SiteNavBar />
+    <div style={{display: 'flex', justifyContent: 'right'}}>
+      <FormGroup>
+        <FormControlLabel control={<Switch checked={showTutorial} onChange={()=>setShowTutorial(prev=>!prev)}/>} label="Tutorial" />
+        <FormControlLabel control={<Switch checked={showLabels}   onChange={()=>setShowLabels(prev=>!prev)} />} label="Modern Country Labels" />
+      </FormGroup>
+    </div>
     <div>
       <div ref={mapContainer} className="map-container" />
 
@@ -269,6 +288,94 @@ export default function App() {
           </div>
         </div>
       </div>
+      {
+        showTutorial &&
+        tutorialWindow === 0 &&
+        <>
+        <Tutorial setShowTutorial={setShowTutorial} setTutorialID={setTutorialWindow}>
+          <div className="video-box">
+            <video width="300" height="300" controls>
+              <source src="./sample.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="instruction-box">
+            <h1>Tutorial window # 1</h1>
+            Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
+            <ul>
+              <li>
+                perform action 1
+              </li>
+              <li>
+                perform action 2
+              </li>
+              <li>
+                perform action 3
+              </li>
+            </ul>
+          </div>
+        </Tutorial>
+        </>
+      }
+      {
+        showTutorial &&
+        tutorialWindow === 1 &&
+        <>
+        <Tutorial setShowTutorial={setShowTutorial} setTutorialID={setTutorialWindow}>
+          <div className="video-box">
+            <video width="300" height="300" controls>
+              <source src="./sample.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="instruction-box">
+            <h1>Tutorial window # 2</h1>
+            Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
+            <ul>
+              <li>
+                perform action 1
+              </li>
+              <li>
+                perform action 2
+              </li>
+              <li>
+                perform action 3
+              </li>
+            </ul>
+          </div>
+        </Tutorial>
+        </>
+      }
+      {
+        showTutorial &&
+        tutorialWindow === 2 &&
+        <>
+        <Tutorial setShowTutorial={setShowTutorial} setTutorialID={setTutorialWindow}>
+          <div className="video-box">
+            <video width="300" height="300" controls>
+              <source src="./sample.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="instruction-box">
+            <h1>Tutorial window # 3</h1>
+            Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
+            <ul>
+              <li>
+                perform action 1
+              </li>
+              <li>
+                perform action 2
+              </li>
+              <li>
+                perform action 3
+              </li>
+            </ul>
+          </div>
+        </Tutorial>
+        </>
+      }
     </div>
+    </>
   )
 }
