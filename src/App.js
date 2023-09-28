@@ -60,7 +60,7 @@ export default function App() {
         })
       })
 
-      
+
       mapLayersFill.forEach((v, i)=> {
         map.current.addLayer(v)
       })
@@ -75,7 +75,7 @@ export default function App() {
         mapImages.forEach((v, i)=>{
           map.current.loadImage(v.imgurl, (error, image) => {
             if (error) {console.log(v.imgname); throw error};
-            if(map.current.hasImage(v.imgname)){
+            if (map.current.hasImage(v.imgname)){
               // necessary to remove this comment if loading is mangled.
               //map.current.removeImage(v.imgname)
             }
@@ -103,64 +103,82 @@ export default function App() {
           'icon-image': [
             'match',
             ['get', 'title'],
-            'Alhambra', 'Alhambra.png',
-            'Islamic Spain', 'Alhambra.png',
+            'British America', 'USA.png',
+            'USA', 'USA.png',
             'Discovering Antarctica', 'Antarctica.png',
-            'Colonial Brazil', 'Brazil.png',
-            'Brazil', 'Brazil.png',
-            'Han Dynasty China', 'China.png',
-            'Tang Dynasty China', 'China.png',
-            'Song Dynasty China', 'China.png',
-            'Yuan (Mongol) China', 'Mongol.png',
-            'Ming Dynasty China', 'China.png',
-            'Qing Dynasty China', 'China.png',
-            'Roman Empire', 'Rome.png',
-            'Byzantine / Venice City-State', 'Italy Venice.png',
-            'Early Renaissance', 'Italy Pisa.png',
-            'High Renaissance', 'Italy Florence.png',
-            'Italian Baroque', 'Italy Vatican.png',
-            'Nara Capital Japan', 'Japan Temple.png',
-            'Kyoto Capital Japan', 'Japan Tori.png',
-            'Samurai Japan', 'Japan Shogun.png',
-            'Edo Capital Japan', 'Japan Edo.png',
-            'Roman London', 'London Rome.png',
-            'Medieval London', 'London Tower.png',
-            'Victorian London', 'London Victorian.png',
-            'Renaissance London', 'London Westminster.png',
+            'Hopewell Culture', 'Hopewell.png',
             'Teotihuacan', 'Teotihuacan.png',
             'Mayans', 'Mayans.png',
             'Aztec Empire', 'Aztec.png',
             'Spanish Mexico', 'Spanish America.png',
-            'Modern-day Mexico', 'Mexico.png',
-            'Medieval Paris', 'Notre Dame.png',
+            'Mexico', 'Mexico.png',
             'Spanish Puerto Rico', 'Puerto Rico.png',
-            'Puerto Rico, US Territory', 'Puerto Rico.png',
-            'Timbuktu- Ghana Empire', 'Timbuktu.png',
-            'Timbuktu- Mali Empire', 'Timbuktu.png',
-            'Timbuktu- Songhai Empire', 'Timbuktu.png',
-            'Timbuktu- Mali', 'Timbuktu.png',
-            'British America', 'USA.png',
-            'USA', 'USA.png',
-            'Rome', 'Rome.png',
-            'Japan Capitals', 'Japan Edo.png',
+            'Puerto Rico', 'Puerto Rico.png',
+            'Colonial Brazil', 'Brazil.png',
+            'Brazil', 'Brazil.png',
+            'Roman London', 'London Rome.png',
+            'Medieval London', 'London Tower.png',
+            'Victorian London', 'London Victorian.png',
             'London', 'London Westminster.png',
+            'Alhambra', 'Alhambra.png',
+            'Islamic Spain', 'Alhambra.png',
+            'Medieval Paris', 'Notre Dame.png',
             'Paris', 'Notre Dame.png',
+            'Rome', 'Rome.png',
+            'Roman Empire', 'Rome.png',
+            'Venice City-State', 'Italy Venice.png',
+            'Early Renaissance Italy', 'Italy Pisa.png',
+            'Renaissance Italy', 'Italy Florence.png',
+            'Baroque Italy', 'Italy Vatican.png',
+            'Italy','Italy Vatican.png',
+            'Holy Roman Empire', 'HolyRomanEmpire.png',
+            'Byzantine Empire', 'Byzantine.png',
+            'Timbuktu, Ghana Empire', 'Timbuktu.png',
+            'Timbuktu, Mali Empire', 'Timbuktu.png',
+            'Timbuktu, Songhai Empire', 'Timbuktu.png',
+            'Timbuktu', 'Timbuktu.png',
+            'Axum', 'Axum.png',
+            'Ethiopia', 'Ethiopia.png',
+            'Great Zimbabwe', 'Zimbabwe.png',
+            'South Africa','Capetown.png',
+            'Parthian Empire', 'Sassanid.png',
+            'Sassanid Empire', 'Sassanid.png',
+            'Ummayad Caliphate', 'Umayyad.png',
+            'Ottoman Empire', 'Ottoman.png',
+            'Gupta Empire', 'Gupta.png',
+            'Delhi Sultanate', 'Delhi.png',
+            'Mughal India', 'Mughal.png',
+            'India', 'Mughal.png',
+            'Han Dynasty China', 'China.png',
+            'Tang Dynasty China', 'China.png',
+            'Song Dynasty China', 'China.png',
+            'Yuan Dynasty China', 'Mongol.png',
+            'Ming Dynasty China', 'China.png',
+            'Qing Dynasty China', 'China.png',
             'China', 'China.png',
+            'Khmer Empire', 'Khmer.png',
+            'Angkor Wat', 'Khmer.png',
+            'Majahapit Empire', 'Majahapit.png',
+            'Nara, Japan', 'Japan Temple.png',
+            'Kyoto, Japan', 'Japan Tori.png',
+            'Shogun Japan', 'Japan Shogun.png',
+            'Edo, Japan', 'Japan Edo.png',
+            'Japan', 'Japan Edo.png',
             'custom-marker.png' // default custom marker
           ],
           'icon-size': [
-              'step',
-              ['zoom'],
-              0.4, // Default icon size when zoom is less than 10
-              3, 0.6 // Icon size when zoom is 10 or higher
+            'step',
+            ['zoom'],
+            0.4, // Default icon size when zoom is less than 10
+            3, 0.6 // Icon size when zoom is 10 or higher
           ],
           "icon-offset": [
             0, -100
           ],
           'text-field': ['get', 'title'],
           'text-font': [
-              'Open Sans Semibold',
-              'Arial Unicode MS Bold'
+            'Open Sans Semibold',
+            'Arial Unicode MS Bold'
           ],
           'text-size': 12,
           'text-offset': [0, 0],
@@ -176,7 +194,7 @@ export default function App() {
 
       //create pop-up with variable GeoJSON files
       const layers = ['world_1-fill', 'world_250-fill', 'world_500-fill', 'world_750-fill', 'world_1000-fill', 'world_1250-fill', 'world_1500-fill', 'world_1750-fill', 'world_2000-fill']; // add more layers as needed
-      
+
       map.current.on('click', layers, (e) => {
         var popupContent = document.createElement('div');
         popupContent.style.color = 'white';
@@ -186,13 +204,13 @@ export default function App() {
         popupContent.innerHTML = `<strong>${e.features[0].properties.NAME}</strong>`;
 
         var popup = new mapboxgl.Popup({ className: 'my-popup' })
-            .setLngLat(e.lngLat)
-            .setDOMContent(popupContent)
-            .addTo(map.current);
+          .setLngLat(e.lngLat)
+          .setDOMContent(popupContent)
+          .addTo(map.current);
 
         // Close the popup after 3 seconds
         window.setTimeout(() => {
-            popup.remove();
+          popup.remove();
         }, 3000);
       });
 
@@ -209,12 +227,12 @@ export default function App() {
     });
 
     loadImages()
-    
+
   }, [map.current, currentyear]);
 
   const startyear = 0;
   const endyear = 2023
-  
+
   useEffect(()=>{
     setCurrentYear(defaultyear)
   }, [defaultyear])
@@ -224,15 +242,15 @@ export default function App() {
     const year = parseInt(numYear)
     let filters = [];
     if (year < 0) {
-        filters = ["all",
-            [">=", ['get', 'yearstart'], year],
-            ["<=", ['get', 'yearend'], year]
-        ];
+      filters = ["all",
+        [">=", ['get', 'yearstart'], year],
+        ["<=", ['get', 'yearend'], year]
+      ];
     } else {
-        filters = ["all",
-            [">=", ['get', 'yearend'], year],
-            ["<=", ['get', 'yearstart'], year]
-        ];
+      filters = ["all",
+        [">=", ['get', 'yearend'], year],
+        ["<=", ['get', 'yearstart'], year]
+      ];
     }
 
     map.current.setFilter('points', filters)
@@ -245,9 +263,9 @@ export default function App() {
   }
 
   useEffect(()=>{
-    if(map.current && isStyleLoaded){
+    if (map.current && isStyleLoaded) {
       filterBy(defaultyear)
-      map.current.style.stylesheet.layers.forEach(l => { if (l.type == "symbol") map.current.setLayoutProperty(l.id, "visibility", showLabels?"visible":"none") })
+      map.current.style.stylesheet.layers.forEach(l => { if (l.type == "symbol") map.current.setLayoutProperty(l.id, "visibility", showLabels ?"visible": "none") })
     }
 
     // Change color of slider background based upon the position of the slider
@@ -256,126 +274,126 @@ export default function App() {
     if(defaultyear <= 1000){
       sliderElement.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + value + '%, #fff ' + value + '%, white 100%)'
     } else {
-      sliderElement.style.background = 'linear-gradient(to right, #82CFD0 '+ value *0.4+'%, #00008B ' + value + '%, #fff ' + value + '%, white 100%)'
+      sliderElement.style.background = 'linear-gradient(to right, #82CFD0 ' + value * 0.4 + '%, #00008B ' + value + '%, #fff ' + value + '%, white 100%)'
     }
 
   }, [map.current, defaultyear, showLabels])
 
   return (
     <>
-    <SiteNavBar />
-    <div style={{display: 'flex', justifyContent: 'right'}}>
-      <FormGroup>
-        <FormControlLabel control={<Switch checked={showTutorial} onChange={()=>setShowTutorial(prev=>!prev)}/>} label="Tutorial" />
-        <FormControlLabel control={<Switch checked={showLabels}   onChange={()=>setShowLabels(prev=>!prev)} />} label="Modern Country Labels" />
-      </FormGroup>
-    </div>
-    <div>
-      <div ref={mapContainer} className="map-container" />
+      <SiteNavBar />
+      <div style={{ display: 'flex', justifyContent: 'right' }}>
+        <FormGroup>
+          <FormControlLabel control={<Switch checked={showTutorial} onChange={() => setShowTutorial(prev => !prev)} />} label="Tutorial" />
+          <FormControlLabel control={<Switch checked={showLabels} onChange={() => setShowLabels(prev => !prev)} />} label="Modern Country Labels" />
+        </FormGroup>
+      </div>
+      <div>
+        <div ref={mapContainer} className="map-container" />
 
-      <div className="map-overlay top">
-        <div className="map-overlay-inner">
-          <h2>Historical Timeline</h2>
+        <div className="map-overlay top">
+          <div className="map-overlay-inner">
+            <h2>Historical Timeline</h2>
             <div id="sliderholder">
               <input id="slider" className="slider" value={defaultyear} type="range" step={250} list="tickmarks" max={endyear} min={startyear} onChange={e=>setDefaultYear(e.target.value)}></input>
             </div>
             <div id="year">{defaultyear} CE</div>
-          <datalist id="tickmarks">
-          </datalist>
-          <div className="timeline-labels">
-            <span>0CE</span>
-            <span>2000CE</span>
+            <datalist id="tickmarks">
+            </datalist>
+            <div className="timeline-labels">
+              <span>0CE</span>
+              <span>2000CE</span>
+            </div>
           </div>
         </div>
+        {
+          showTutorial &&
+          tutorialWindow === 0 &&
+          <>
+            <Tutorial setShowTutorial={setShowTutorial} setTutorialID={setTutorialWindow}>
+              <div className="video-box">
+                <video width="300" height="300" controls>
+                  <source src="./sample.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="instruction-box">
+                <h1>Tutorial window # 1</h1>
+                Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
+                <ul>
+                  <li>
+                    perform action 1
+                  </li>
+                  <li>
+                    perform action 2
+                  </li>
+                  <li>
+                    perform action 3
+                  </li>
+                </ul>
+              </div>
+            </Tutorial>
+          </>
+        }
+        {
+          showTutorial &&
+          tutorialWindow === 1 &&
+          <>
+            <Tutorial setShowTutorial={setShowTutorial} setTutorialID={setTutorialWindow}>
+              <div className="video-box">
+                <video width="300" height="300" controls>
+                  <source src="./sample.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="instruction-box">
+                <h1>Tutorial window # 2</h1>
+                Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
+                <ul>
+                  <li>
+                    perform action 1
+                  </li>
+                  <li>
+                    perform action 2
+                  </li>
+                  <li>
+                    perform action 3
+                  </li>
+                </ul>
+              </div>
+            </Tutorial>
+          </>
+        }
+        {
+          showTutorial &&
+          tutorialWindow === 2 &&
+          <>
+            <Tutorial setShowTutorial={setShowTutorial} setTutorialID={setTutorialWindow}>
+              <div className="video-box">
+                <video width="300" height="300" controls>
+                  <source src="./sample.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="instruction-box">
+                <h1>Tutorial window # 3</h1>
+                Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
+                <ul>
+                  <li>
+                    perform action 1
+                  </li>
+                  <li>
+                    perform action 2
+                  </li>
+                  <li>
+                    perform action 3
+                  </li>
+                </ul>
+              </div>
+            </Tutorial>
+          </>
+        }
       </div>
-      {
-        showTutorial &&
-        tutorialWindow === 0 &&
-        <>
-        <Tutorial setShowTutorial={setShowTutorial} setTutorialID={setTutorialWindow}>
-          <div className="video-box">
-            <video width="300" height="300" controls>
-              <source src="./sample.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className="instruction-box">
-            <h1>Tutorial window # 1</h1>
-            Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
-            <ul>
-              <li>
-                perform action 1
-              </li>
-              <li>
-                perform action 2
-              </li>
-              <li>
-                perform action 3
-              </li>
-            </ul>
-          </div>
-        </Tutorial>
-        </>
-      }
-      {
-        showTutorial &&
-        tutorialWindow === 1 &&
-        <>
-        <Tutorial setShowTutorial={setShowTutorial} setTutorialID={setTutorialWindow}>
-          <div className="video-box">
-            <video width="300" height="300" controls>
-              <source src="./sample.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className="instruction-box">
-            <h1>Tutorial window # 2</h1>
-            Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
-            <ul>
-              <li>
-                perform action 1
-              </li>
-              <li>
-                perform action 2
-              </li>
-              <li>
-                perform action 3
-              </li>
-            </ul>
-          </div>
-        </Tutorial>
-        </>
-      }
-      {
-        showTutorial &&
-        tutorialWindow === 2 &&
-        <>
-        <Tutorial setShowTutorial={setShowTutorial} setTutorialID={setTutorialWindow}>
-          <div className="video-box">
-            <video width="300" height="300" controls>
-              <source src="./sample.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className="instruction-box">
-            <h1>Tutorial window # 3</h1>
-            Text for the instruction box. This is a placeholder instruction box text that should be replaced with instructions
-            <ul>
-              <li>
-                perform action 1
-              </li>
-              <li>
-                perform action 2
-              </li>
-              <li>
-                perform action 3
-              </li>
-            </ul>
-          </div>
-        </Tutorial>
-        </>
-      }
-    </div>
     </>
   )
 }
