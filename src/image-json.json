@@ -108,6 +108,74 @@
     "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/USA.png"
   },
   {
+    "imgname": "Abassid.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Abassid.png"
+  },
+  {
+    "imgname": "Aussie.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Aussie.png"
+  },
+  {
+    "imgname": "Axum.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Axum.png"
+  },
+  {
+    "imgname": "Byzantine.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Byzantine.png"
+  },
+  {
+    "imgname": "Capetown.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Capetown.png"
+  },
+  {
+    "imgname": "Delhi.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Delhi.png"
+  },
+  {
+    "imgname": "Ethiopa.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Ethiopia.png"
+  },
+  {
+    "imgname": "Gupta.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Gupta.png"
+  },
+  {
+    "imgname": "HolyRomanEmpire.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/HolyRomanEmpire.png"
+  },
+  {
+    "imgname": "Hopewell.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Hopewell.png"
+  },
+  {
+    "imgname": "Khmer.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Khmer.png"
+  },
+  {
+    "imgname": "Majahapit.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Majahapit.png"
+  },
+  {
+    "imgname": "Mughal.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Mughal.png"
+  },
+  {
+    "imgname": "Ottoman.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Ottoman.png"
+  },
+  {
+    "imgname": "Sassanid.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Sassanid.png"
+  },
+  {
+    "imgname": "Umayyad.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Umayyad.png"
+  },
+  {
+    "imgname": "Zimbabwe.png",
+    "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/Zimbabwe.png"
+  },
+  {
     "imgname": "custom-marker.png",
     "imgurl": "https://raw.githubusercontent.com/nextworldatlas/markers/main/USA.png"
   }
