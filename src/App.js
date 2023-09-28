@@ -164,7 +164,7 @@ export default function App() {
             'Shogun Japan', 'Japan Shogun.png',
             'Edo, Japan', 'Japan Edo.png',
             'Japan', 'Japan Edo.png',
-            'custom-marker.png' // default custom marker
+            'error-marker.png' // default custom marker
           ],
           'icon-size': [
             'step',
