@@ -1,27 +1,40 @@
 {
-  "type": "geojson",
-  "data": {
-      "type": "FeatureCollection",
-      "features":
-          [
+    "type": "geojson",
+    "data": {
+        "type": "FeatureCollection",
+        "features":
+            [
               {
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [-3.5888, 37.1760] 
+                      "coordinates": [-77.0369, 38.8951]
                   },
                   "properties": {
-                      "yearstart": 700,
-                      "yearend": 1300,
-                      "title": "Islamic Spain",
-                      "link": "https://www.example.com/alhambra"
+                      "yearstart": 1700,
+                      "yearend": 1800,
+                      "title": "British America",
+                      "link": "https://www.example.com/britishamerica"
                   }
               },
               {
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [-59.6858, -64.8030] 
+                      "coordinates": [-77.0369, 38.8951]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "USA",
+                      "link": "https://www.example.com/usa"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-59.6858, -64.8030]
                   },
                   "properties": {
                       "yearstart": 1900,
@@ -34,11 +47,115 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [-38.5032, -12.9716] 
+                      "coordinates": [-83.0023, 39.2233]
+                  },
+                  "properties": {
+                      "yearstart": -100,
+                      "yearend": 600,
+                      "title": "Hopewell Culture",
+                      "link": "https://en.wikipedia.org/wiki/Hopewell_tradition"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-98.875, 19.685]
+                  },
+                  "properties": {
+                      "yearstart": -100,
+                      "yearend": 100,
+                      "title": "Teotihuacan",
+                      "link": "https://www.example.com/teotihuacan"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-88.567, 20.682]
+                  },
+                  "properties": {
+                      "yearstart": 200,
+                      "yearend": 1100,
+                      "title": "Mayans",
+                      "link": "https://www.example.com/chichenitza"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-99.133, 19.432]
                   },
                   "properties": {
                       "yearstart": 1400,
                       "yearend": 1600,
+                      "title": "Aztec Empire",
+                      "link": "https://www.example.com/mexicocity"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-99.133, 19.432]
+                  },
+                  "properties": {
+                      "yearstart": 1700,
+                      "yearend": 1800,
+                      "title": "Spanish Mexico",
+                      "link": "https://www.example.com/spanishmexico"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-99.133, 19.432]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "Mexico",
+                      "link": "https://www.example.com/moderndaymexico"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-66.5901, 18.2208]
+                  },
+                  "properties": {
+                      "yearstart": 1400,
+                      "yearend": 1800,
+                      "title": "Spanish Puerto Rico",
+                      "link": "https://www.example.com/spanishpuertorico"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-66.5901, 18.2208]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "Puerto Rico",
+                      "link": "https://www.example.com/uspuertorico"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-38.5032, -12.9716]
+                  },
+                  "properties": {
+                      "yearstart": 1400,
+                      "yearend": 1800,
                       "title": "Colonial Brazil",
                       "link": "https://www.example.com/salvador"
                   }
@@ -47,13 +164,429 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [-43.1729, -22.9068] 
+                      "coordinates": [-43.1729, -22.9068]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "Brazil",
+                      "link": "https://www.example.com/rio"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-0.1280, 51.5074]
+                  },
+                  "properties": {
+                      "yearstart": -100,
+                      "yearend": 300,
+                      "title": "Roman London",
+                      "link": "https://www.example.com/london"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-0.1280, 51.5074] 
+                  },
+                  "properties": {
+                      "yearstart": 900,
+                      "yearend": 1300,
+                      "title": "Medieval London",
+                      "link": "https://www.example.com/london"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-0.1280, 51.5074]
+                  },
+                  "properties": {
+                      "yearstart": 1700,
+                      "yearend": 1800,
+                      "title": "Victorian London",
+                      "link": "https://www.example.com/london"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-0.1280, 51.5074]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "London",
+                      "link": "https://www.example.com/london"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-3.5888, 37.1760]
+                  },
+                  "properties": {
+                      "yearstart": 700,
+                      "yearend": 1300,
+                      "title": "Islamic Spain",
+                      "link": "https://www.example.com/alhambra"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-3.5888, 37.1760]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "Islamic Spain",
+                      "link": "https://www.example.com/alhambra"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [2.3499, 48.8534]
+                  },
+                  "properties": {
+                      "yearstart": 900,
+                      "yearend": 1300,
+                      "title": "Medieval Paris",
+                      "link": "https://www.example.com/medievalparis"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [2.3499, 48.8534]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "Paris",
+                      "link": "https://www.example.com/medievalparis"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [12.4924, 41.8903]
+                  },
+                  "properties": {
+                      "yearstart": -100,
+                      "yearend": 300,
+                      "title": "Roman Empire",
+                      "link": "https://www.example.com/rome"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [12.3155, 45.4408]
+                  },
+                  "properties": {
+                      "yearstart": 700,
+                      "yearend": 800,
+                      "title": "Venice City-State",
+                      "link": "https://www.example.com/venice"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [10.4017, 43.7228]
+                  },
+                  "properties": {
+                      "yearstart": 1200,
+                      "yearend": 1300,
+                      "title": "Early Renaissance Italy",
+                      "link": "https://www.example.com/pisa"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [11.2558, 43.7696]
+                  },
+                  "properties": {
+                      "yearstart": 1400,
+                      "yearend": 1600,
+                      "title": "Renaissance Italy",
+                      "link": "https://www.example.com/florence"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [12.4964, 41.9028]
+                  },
+                  "properties": {
+                      "yearstart": 1700,
+                      "yearend": 1800,
+                      "title": "Baroque Italy",
+                      "link": "https://www.example.com/rome"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [12.4924, 41.8903]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "Italy",
+                      "link": "https://www.example.com/rome"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [6.0833, 50.7753]
+                  },
+                  "properties": {
+                      "yearstart": 1200,
+                      "yearend": 1600,
+                      "title": "Holy Roman Empire",
+                      "link": "https://en.wikipedia.org/wiki/Holy_Roman_Empire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [28.9769, 41.0082]
+                  },
+                  "properties": {
+                      "yearstart": 400,
+                      "yearend": 1300,
+                      "title": "Byzantine Empire",
+                      "link": "https://en.wikipedia.org/wiki/Byzantine_Empire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-3.0081, 16.7666]
+                  },
+                  "properties": {
+                      "yearstart": 200,
+                      "yearend": 1100,
+                      "title": "Timbuktu, Ghana Empire",
+                      "link": "https://www.example.com/ghanaempire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-3.0081, 16.7666]
+                  },
+                  "properties": {
+                      "yearstart": 1200,
+                      "yearend": 1300,
+                      "title": "Timbuktu, Mali Empire",
+                      "link": "https://www.example.com/maliempire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-3.0081, 16.7666]
+                  },
+                  "properties": {
+                      "yearstart": 1400,
+                      "yearend": 1600,
+                      "title": "Timbuktu, Songhai Empire",
+                      "link": "https://www.example.com/songhaiempire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [-3.0081, 16.7666]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "Timbuktu",
+                      "link": "https://www.example.com/moderndaymali"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [38.7468, 14.9267]
+                  },
+                  "properties": {
+                      "yearstart": -100,
+                      "yearend": 800,
+                      "title": "Axum",
+                      "link": "https://en.wikipedia.org/wiki/Aksum"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [38.7525, 9.0192]
+                  },
+                  "properties": {
+                      "yearstart": 1400,
+                      "yearend": 1800,
+                      "title": "Ethiopia",
+                      "link": "https://en.wikipedia.org/wiki/Ethiopia"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [30.9338, -20.2675]
+                  },
+                  "properties": {
+                      "yearstart": 1200,
+                      "yearend": 1600,
+                      "title": "Great Zimbabwe",
+                      "link": "https://en.wikipedia.org/wiki/Great_Zimbabwe"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [18.2526, -33.5531]
                   },
                   "properties": {
                       "yearstart": 1700,
                       "yearend": 2100,
-                      "title": "Brazil",
-                      "link": "https://www.example.com/rio"
+                      "title": "South Africa",
+                      "link": "https://en.wikipedia.org/wiki/South_Africa"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [44.3450, 33.5037] 
+                  },
+                  "properties": {
+                      "yearstart": -100,
+                      "yearend": 300,
+                      "title": "Parthian Empire",
+                      "link": "https://en.wikipedia.org/wiki/Parthian_Empire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [44.3450, 33.5037] 
+                  },
+                  "properties": {
+                      "yearstart": 400,
+                      "yearend": 600,
+                      "title": "Sassanid Empire",
+                      "link": "https://en.wikipedia.org/wiki/Sasanian_Empire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [36.1731, 33.3047] 
+                  },
+                  "properties": {
+                      "yearstart": 700,
+                      "yearend": 800,
+                      "title": "Ummayad Caliphate",
+                      "link": "https://en.wikipedia.org/wiki/Umayyad_Caliphate"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [28.5718, 41.0049] 
+                  },
+                  "properties": {
+                      "yearstart": 1400,
+                      "yearend": 1800,
+                      "title": "Ottoman Empire",
+                      "link": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [85.1333, 25.5941]
+                  },
+                  "properties": {
+                      "yearstart": 400,
+                      "yearend": 600,
+                      "title": "Gupta Empire",
+                      "link": "https://en.wikipedia.org/wiki/Gupta_Empire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [77.2090, 28.6139]
+                  },
+                  "properties": {
+                      "yearstart": 1200,
+                      "yearend": 1300,
+                      "title": "Delhi Sultanate",
+                      "link": "https://en.wikipedia.org/wiki/Delhi_Sultanate"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [78.0075, 27.1767]
+                  },
+                  "properties": {
+                      "yearstart": 1400,
+                      "yearend": 1600,
+                      "title": "Mughal India",
+                      "link": "https://en.wikipedia.org/wiki/Mughal_empire"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [78.0075, 27.1767]
+                  },
+                  "properties": {
+                      "yearstart": 1900,
+                      "yearend": 2100,
+                      "title": "India",
+                      "link": "https://en.wikipedia.org/wiki/India"
                   }
               },
               {
@@ -73,7 +606,7 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [108.9402, 34.3416] 
+                      "coordinates": [108.9402, 34.3416]
                   },
                   "properties": {
                       "yearstart": 700,
@@ -86,7 +619,7 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [120.1551, 30.2741] 
+                      "coordinates": [120.1551, 30.2741]
                   },
                   "properties": {
                       "yearstart": 900,
@@ -99,12 +632,12 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [116.4074, 39.9042] 
+                      "coordinates": [116.4074, 39.9042]
                   },
                   "properties": {
                       "yearstart": 1200,
                       "yearend": 1300,
-                      "title": "Yuan (Mongol) China",
+                      "title": "Yuan Dynasty China",
                       "link": "https://www.example.com/beijing"
                   }
               },
@@ -112,7 +645,7 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [116.4074, 39.9042] 
+                      "coordinates": [116.4074, 39.9042]
                   },
                   "properties": {
                       "yearstart": 1400,
@@ -125,7 +658,7 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [116.4074, 39.9042] 
+                      "coordinates": [116.4074, 39.9042]
                   },
                   "properties": {
                       "yearstart": 1700,
@@ -151,90 +684,51 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [12.4924, 41.8903] 
+                      "coordinates": [103.8607, 13.4125]
                   },
                   "properties": {
-                      "yearstart": -100,
-                      "yearend": 600,
-                      "title": "Roman Empire",
-                      "link": "https://www.example.com/rome"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [12.3155, 45.4408] 
-                  },
-                  "properties": {
-                      "yearstart": 700,
-                      "yearend": 800,
-                      "title": "Byzantine / Venice City-State",
-                      "link": "https://www.example.com/venice"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [10.4017, 43.7228] 
-                  },
-                  "properties": {
-                      "yearstart": 1200,
+                      "yearstart": 900,
                       "yearend": 1300,
-                      "title": "Early Renaissance",
-                      "link": "https://www.example.com/pisa"
+                      "title": "Khmer Empire",
+                      "link": "https://en.wikipedia.org/wiki/Khmer_Empire"
                   }
               },
               {
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [11.2558, 43.7696] 
-                  },
-                  "properties": {
-                      "yearstart": 1400,
-                      "yearend": 1600,
-                      "title": "High Renaissance",
-                      "link": "https://www.example.com/florence"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [12.4964, 41.9028] 
-                  },
-                  "properties": {
-                      "yearstart": 1700,
-                      "yearend": 1800,
-                      "title": "Italian Baroque",
-                      "link": "https://www.example.com/rome"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [12.4924, 41.8903] 
+                      "coordinates": [103.8607, 13.4125]
                   },
                   "properties": {
                       "yearstart": 1900,
                       "yearend": 2100,
-                      "title": "Rome",
-                      "link": "https://www.example.com/rome"
+                      "title": "Angkor Wat",
+                      "link": "https://en.wikipedia.org/wiki/Khmer_Empire"
                   }
               },
               {
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [135.8396, 34.6851] 
+                      "coordinates": [104.0451, -2.2160]
+                  },
+                  "properties": {
+                      "yearstart": 1200,
+                      "yearend": 1300,
+                      "title": "Majapahit",
+                      "link": "https://en.wikipedia.org/wiki/Majapahit"
+                  }
+              },
+              {
+                  "type": "Feature",
+                  "geometry": {
+                      "type": "Point",
+                      "coordinates": [135.8396, 34.6851]
                   },
                   "properties": {
                       "yearstart": 700,
                       "yearend": 800,
-                      "title": "Nara Capital Japan",
+                      "title": "Nara, Japan",
                       "link": "https://www.example.com/nara"
                   }
               },
@@ -242,12 +736,12 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [135.7681, 35.0116] 
+                      "coordinates": [135.7681, 35.0116]
                   },
                   "properties": {
                       "yearstart": 900,
                       "yearend": 1300,
-                      "title": "Kyoto Capital Japan",
+                      "title": "Kyoto, Japan",
                       "link": "https://www.example.com/kyoto"
                   }
               },
@@ -260,7 +754,7 @@
                   "properties": {
                       "yearstart": 1400,
                       "yearend": 1600,
-                      "title": "Samurai Japan",
+                      "title": "Shogun Japan",
                       "link": "https://www.example.com/kyoto"
                   }
               },
@@ -268,12 +762,12 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [139.6917, 35.6895] 
+                      "coordinates": [139.6917, 35.6895]
                   },
                   "properties": {
                       "yearstart": 1700,
                       "yearend": 1800,
-                      "title": "Edo Capital Japan",
+                      "title": "Edo, Japan",
                       "link": "https://www.example.com/tokyo"
                   }
               },
@@ -286,7 +780,7 @@
                   "properties": {
                       "yearstart": 1900,
                       "yearend": 2100,
-                      "title": "Japan Capitals",
+                      "title": "Japan",
                       "link": "https://www.example.com/tokyo"
                   }
               },
@@ -294,417 +788,14 @@
                   "type": "Feature",
                   "geometry": {
                       "type": "Point",
-                      "coordinates": [-0.1280, 51.5074] 
-                  },
-                  "properties": {
-                      "yearstart": -100,
-                      "yearend": 100,
-                      "title": "Roman London",
-                      "link": "https://www.example.com/london"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-0.1280, 51.5074] 
-                  },
-                  "properties": {
-                      "yearstart": 900,
-                      "yearend": 1300,
-                      "title": "Medieval London",
-                      "link": "https://www.example.com/london"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-0.1280, 51.5074] 
-                  },
-                  "properties": {
-                      "yearstart": 1400,
-                      "yearend": 1600,
-                      "title": "Renaissance London",
-                      "link": "https://www.example.com/london"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-0.1280, 51.5074] 
+                      "coordinates": [151.2093, -33.8688]
                   },
                   "properties": {
                       "yearstart": 1700,
-                      "yearend": 1800,
-                      "title": "Victorian London",
-                      "link": "https://www.example.com/london"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-0.1280, 51.5074] 
-                  },
-                  "properties": {
-                      "yearstart": 1900,
                       "yearend": 2100,
-                      "title": "London",
-                      "link": "https://www.example.com/london"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-98.875, 19.685] 
-                  },
-                  "properties": {
-                      "yearstart": -100,
-                      "yearend": 100,
-                      "title": "Teotihuacan",
-                      "link": "https://www.example.com/teotihuacan"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-88.567, 20.682] 
-                  },
-                  "properties": {
-                      "yearstart": 200,
-                      "yearend": 1100,
-                      "title": "Mayans",
-                      "link": "https://www.example.com/chichenitza"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-99.133, 19.432] 
-                  },
-                  "properties": {
-                      "yearstart": 1400,
-                      "yearend": 1600,
-                      "title": "Aztec Empire",
-                      "link": "https://www.example.com/mexicocity"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-99.133, 19.432] 
-                  },
-                  "properties": {
-                      "yearstart": 1700,
-                      "yearend": 1800,
-                      "title": "Spanish Mexico",
-                      "link": "https://www.example.com/spanishmexico"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-99.133, 19.432] 
-                  },
-                  "properties": {
-                      "yearstart": 1900,
-                      "yearend": 2100,
-                      "title": "Modern-day Mexico",
-                      "link": "https://www.example.com/moderndaymexico"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [2.3499, 48.8534]
-                  },
-                  "properties": {
-                      "yearstart": 900,
-                      "yearend": 1300,
-                      "title": "Medieval Paris",
-                      "link": "https://www.example.com/medievalparis"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [2.3499, 48.8534] 
-                  },
-                  "properties": {
-                      "yearstart": 1900,
-                      "yearend": 2100,
-                      "title": "Paris",
-                      "link": "https://www.example.com/medievalparis"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-66.5901, 18.2208] 
-                  },
-                  "properties": {
-                      "yearstart": 1400,
-                      "yearend": 1800,
-                      "title": "Spanish Puerto Rico",
-                      "link": "https://www.example.com/spanishpuertorico"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-66.5901, 18.2208] 
-                  },
-                  "properties": {
-                      "yearstart": 1900,
-                      "yearend": 2100,
-                      "title": "Puerto Rico, US Territory",
-                      "link": "https://www.example.com/uspuertorico"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-3.0081, 16.7666] 
-                  },
-                  "properties": {
-                      "yearstart": 200,
-                      "yearend": 1100,
-                      "title": "Timbuktu- Ghana Empire",
-                      "link": "https://www.example.com/ghanaempire"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-3.0081, 16.7666] 
-                  },
-                  "properties": {
-                      "yearstart": 1200,
-                      "yearend": 1300,
-                      "title": "Timbuktu- Mali Empire",
-                      "link": "https://www.example.com/maliempire"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-3.0081, 16.7666] 
-                  },
-                  "properties": {
-                      "yearstart": 1400,
-                      "yearend": 1600,
-                      "title": "Timbuktu- Songhai Empire",
-                      "link": "https://www.example.com/songhaiempire"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-3.0081, 16.7666] 
-                  },
-                  "properties": {
-                      "yearstart": 1900,
-                      "yearend": 2100,
-                      "title": "Timbuktu- Mali",
-                      "link": "https://www.example.com/moderndaymali"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-77.0369, 38.8951] 
-                  },
-                  "properties": {
-                      "yearstart": 1700,
-                      "yearend": 1800,
-                      "title": "British America",
-                      "link": "https://www.example.com/britishamerica"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-77.0369, 38.8951] 
-                  },
-                  "properties": {
-                      "yearstart": 1900,
-                      "yearend": 2100,
-                      "title": "USA",
-                      "link": "https://www.example.com/usa"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [-83.0023, 39.2233] 
-                  },
-                  "properties": {
-                      "yearstart": -100,
-                      "yearend": 600,
-                      "title": "Hopewell Tradition",
-                      "link": "https://en.wikipedia.org/wiki/Hopewell_tradition"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [38.7468, 14.9267] 
-                  },
-                  "properties": {
-                      "yearstart": -100,
-                      "yearend": 800,
-                      "title": "Axum (Aksum)",
-                      "link": "https://en.wikipedia.org/wiki/Aksum"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [9.1450, 38.7000] 
-                  },
-                  "properties": {
-                      "yearstart": 1400,
-                      "yearend": 1600,
-                      "title": "Ethiopia (Addis Ababa)",
-                      "link": "https://en.wikipedia.org/wiki/Ethiopia"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [30.9338, -20.2675] 
-                  },
-                  "properties": {
-                      "yearstart": 1100,
-                      "yearend": 1300,
-                      "title": "Zimbabwe",
-                      "link": "https://en.wikipedia.org/wiki/Zimbabwe"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [28.9769, 41.0082] 
-                  },
-                  "properties": {
-                      "yearstart": 400,
-                      "yearend": 1300,
-                      "title": "Byzantine (Constantinople)",
-                      "link": "https://en.wikipedia.org/wiki/Byzantine_Empire"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [6.0833, 50.7753] 
-                  },
-                  "properties": {
-                      "yearstart": 1200,
-                      "yearend": 1800,
-                      "title": "Holy Roman Empire (Aachen)",
-                      "link": "https://en.wikipedia.org/wiki/Holy_Roman_Empire"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [44.4137, 32.4982] 
-                  },
-                  "properties": {
-                      "yearstart": 700,
-                      "yearend": 800,
-                      "title": "Abassid (Baghdad)",
-                      "link": "https://en.wikipedia.org/wiki/Abbasid_Caliphate"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [85.1333, 25.5941] 
-                  },
-                  "properties": {
-                      "yearstart": 400,
-                      "yearend": 600,
-                      "title": "Gupta (Pataliputra)",
-                      "link": "https://en.wikipedia.org/wiki/Gupta_Empire"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [77.2090, 28.6139] 
-                  },
-                  "properties": {
-                      "yearstart": 1200,
-                      "yearend": 1400,
-                      "title": "Delhi Sultnate (Delhi)",
-                      "link": "https://en.wikipedia.org/wiki/Delhi_Sultanate"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [78.0075, 27.1767]
-                  },
-                  "properties": {
-                      "yearstart": 1400,
-                      "yearend": 1600,
-                      "title": "Mughal (Agra)",
-                      "link": "https://en.wikipedia.org/wiki/Mughal_empire"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [103.8607, 13.4125] 
-                  },
-                  "properties": {
-                      "yearstart": 900,
-                      "yearend": 1300,
-                      "title": "Khmer (Siem Reap)",
-                      "link": "https://en.wikipedia.org/wiki/Khmer_Empire"
-                  }
-              },
-              {
-                  "type": "Feature",
-                  "geometry": {
-                      "type": "Point",
-                      "coordinates": [104.0451, -2.2160] 
-                  },
-                  "properties": {
-                      "yearstart": 1200,
-                      "yearend": 1600,
-                      "title": "Majapahit (Palembang)",
-                      "link": "https://en.wikipedia.org/wiki/Majapahit"
+                      "title": "Australia",
+                      "link": "https://en.wikipedia.org/wiki/Bogan"
                   }
               }
-          ]
-  }}
+            ]
+    }}
