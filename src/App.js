@@ -46,8 +46,8 @@ export default function App() {
       style: 'mapbox://styles/mapbox/navigation-day-v1',
       projection: 'naturalEarth',
       center: [0, 0],
-      zoom: 1.25
-    });
+      zoom: 2,
+    })
 
     map.current.on('load', async () => {
       //HISTORICAL GSON FOR SHAPES//
@@ -198,21 +198,26 @@ export default function App() {
 
       // When the cursor enters a feature in one of the layers, change the cursor style to 'pointer'.
       map.current.on('mouseenter', layers, () => {
-        map.current.getCanvas().style.cursor = 'pointer';
+        map.current.getCanvas().style.cursor = 'pointer'
       });
       // When the cursor leaves a feature in one of the layers, change the cursor style to ''.
       map.current.on('mouseleave', layers, () => {
-        map.current.getCanvas().style.cursor = '';
+        map.current.getCanvas().style.cursor = ''
       })
 
       setIsStyleLoaded(true)
-    });
+    })
 
     loadImages()
-    
-  }, [map.current, currentyear]);
 
-  const startyear = 0;
+    if (/iPhone/i.test(navigator.userAgent)) {
+      // This is an iPhone, so add a class to the slider element
+      let slider = document.getElementById('slider')
+      slider.classList.add('iphone-slider')
+    }
+  }, [map.current, currentyear])
+
+  const startyear = 0
   const endyear = 2023
   
   useEffect(()=>{
@@ -258,6 +263,7 @@ export default function App() {
     } else {
       sliderElement.style.background = 'linear-gradient(to right, #82CFD0 '+ value *0.4+'%, #00008B ' + value + '%, #fff ' + value + '%, white 100%)'
     }
+
 
   }, [map.current, defaultyear, showLabels])
 

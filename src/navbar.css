@@ -1,0 +1,13 @@
+.navbar{
+  background: radial-gradient(circle at 3% 25%,#ADD8E6 0,#e3eedb 100%,violet 0);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+
+.navbar-text{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

@@ -79,6 +79,11 @@ body {
   border-radius: 50%;
 }
 
+/* Define the CSS rule for the slider thumb when it has the 'iphone-slider' class */
+.iphone-slider::-webkit-slider-thumb {
+  margin-top: 0px;
+}
+
 .slider::-moz-range-thumb {
   width: 13px;
   /* Set a specific slider handle width */

@@ -12,7 +12,7 @@
 .button-tutorial {
   position: absolute;
   top: 20%;
-  padding: 15% 5px 15% 5px;
+  padding: 14vh 5px 14vh 5px;
   margin: 10px;
   border: 2px solid rgba(0, 122, 122, 0.7);
   border-radius: 5px;
@@ -29,13 +29,14 @@
 }
 
 .tutorial-overlay {
+  z-index: 2000;
   position: fixed;
   border: rgba(0, 122, 122, 0.2) 3px solid;
   border-radius: 10px;
   background-color: rgba(0, 255, 255, 0.1);
   width: 95%;
   height: auto;
-  top: 20%;
+  top: 15%;
   left: 2.5%;
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
@@ -46,6 +47,7 @@
   right: 10px;
   padding: 5px;
   margin: 10px;
+  margin-top: 5px;
   border: 2px solid rgba(0, 122, 122, 0.7);
   border-radius: 5px;
   background-color: rgba(0, 255, 255, 0.2);
@@ -92,7 +94,7 @@
   .instruction-box  {width: 300px;}
   .video-box {width:300px;}
   .button-tutorial {
-    padding: 10% 3px 10% 3px;
+    padding: 14vh 3px 14vh 3px;
     margin: 5px;
-   }
+  }
 }
